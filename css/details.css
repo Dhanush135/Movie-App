@@ -1,0 +1,159 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(6, 6, 6);
+}
+
+.details_container{
+    width: 100%;
+    display: flex;
+    height: auto;
+    background-color: black;
+}
+
+.pic{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.pic img{
+    width: 500px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.detail{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 13px;
+}
+
+p{
+    color: white;
+}
+
+.title{
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+}
+
+.overview{
+    margin-top: 15px;
+    font-size: large;
+}
+
+.not_found{
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+.similar_items{
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+
+h2{
+    color: white !important;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.element{
+    width: 150px;
+    height: 240px;
+    border-radius: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid white; */
+    flex: 0 0 auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* flex-wrap: nowrap; */
+}
+
+.s{
+    width: 100%;
+    height: 300px;
+    /* border-bottom: 2px solid white; */
+}
+
+.s_posters{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+/* To remove the scroll bar and keep the functionality */
+
+.s_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.s_posters{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+@media screen and (max-width: 720px){
+
+    
+    .details_container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pic{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .detail{
+        width: 100%;
+    }
+
+    .detail p{
+        padding: 20px;
+    }
+
+    .s{
+        border-top: 2px solid rgb(57, 55, 55);
+    }
+
+    .overview{
+        margin-top: 7px;
+    }
+
+    .title{
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 520px){
+
+    .pic img{
+        width: 90%;
+    }
+
+    .detail{
+        padding: 25px;
+    }
+
+}

@@ -1,0 +1,304 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: auto;
+}
+
+.header{
+    /* border: 2px solid white; */
+    /* border-bottom: 3px solid rgb(26, 25, 25); */
+    width: 100%;
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.437);
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo p{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+/* .website_title{
+    padding-top: 0px;
+} */
+
+input{
+    background-color: rgba(52, 51, 51, 0.313);
+    border: 1px solid gray;
+    border-radius: 7px;
+    height: 30px;
+}
+
+#s_value{
+    color: white;
+    outline: none;
+    padding-left: 7px;
+}
+
+input:hover{
+    border: 1px solid white;
+}
+
+#s_icon:hover{
+    color: white;
+}
+
+
+.btn_search img{
+    margin-left: 10px;
+    color: #DB0B5F #6F00ED;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn_search{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+
+.btn_sign p{
+    padding-top: 10px;
+}
+
+.login{
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.signup{
+    margin-right: 30px;
+    font-size: 18px;
+}
+
+.body{
+    height: auto;
+    width: 100%;
+}
+
+.carousel-inner{
+    padding: 1.3rem;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 750px;
+    border-radius: 2%;
+    /* margin-left: 5px;
+    margin-right: 5px; */
+    border: 1px solid rgb(33, 33, 33);
+}
+
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .center_image{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width:fit-content;
+}
+
+.center_image img{
+    width: 900px;
+    height: 300px;
+} */
+
+.nowplaying{
+    width: 100%;
+    height: 300px;
+    background-color: pink;
+}
+
+.np{
+    width: 100%;
+    height: 600px;
+    /* border-bottom: 2px solid white; */
+}
+
+
+/* For popular, top rated, upcoming........ */
+
+h4{
+    color: white !important;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.element{
+    width: 150px;
+    height: 240px;
+    border-radius: 18px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid white; */
+    flex: 0 0 auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* flex-wrap: nowrap; */
+}
+
+
+/* For popular */
+
+.p{
+    width: 100%;
+    height: 300px;
+    /* border-bottom: 2px solid white; */
+}
+
+.p_posters{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+/* For Trending */
+
+.td{
+    width: 100%;
+    height: 300px;
+    /* border-bottom: 2px solid white; */
+}
+
+.td_posters{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+/* For top rated */
+
+.tr{
+    width: 100%;
+    height: 300px;
+    /* border-bottom: 2px solid white; */
+}
+
+.tr_posters{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+/* For upcoming */
+
+.up{
+    width: 100%;
+    height: 300px;
+    /* border-bottom: 2px solid white; */
+}
+
+.up_posters{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+
+/* To remove the scroll bar and keep the functionality */
+
+.p_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.p_posters{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.td_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.td_posters{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.tr_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.tr_posters{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.up_posters::-webkit-scrollbar{
+    display: none;
+}
+
+.up_posters{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+
+
+
+@media screen and (max-width: 552px){
+
+    #website_title{
+        display: none;
+    }
+
+    .carousel-item img{
+        height: 600px;
+    }
+
+    .logo{
+        padding-left: 15px;
+    }
+
+
+}
+
+@media screen and (max-width: 412px){
+
+    .carousel-item img{
+        height: 550px;
+    }
+    
+    .btn_search{
+        margin-right: 30px;
+    }
+
+
+}

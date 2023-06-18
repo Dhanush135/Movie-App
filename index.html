@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineScope-Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="./assets/movies-app.png">
+</head>
+<body>
+    <div class="main">
+
+        <div class="header">
+
+            <div class="logo">
+                <a href="index.html"> <img src="./assets/movies-app.png" width="60px" height="60px" alt=""> </a>  
+                <img src="./assets/CineScope.svg" width="150px" height="50px" id="website_title" alt="">
+            </div>
+
+            <div class="nav">
+
+            </div>
+
+            <div class="btn_search">
+                <input type="search" name="search" id="s_value" placeholder="search here....">
+                <img src="./assets/search.svg" width="25px" height="25px" id="s_icon" alt="">
+            </div>
+
+        </div>
+
+        <div class="body">
+
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <!-- <div class="carousel-item active">
+                    <div class="d-block w-100">
+                        <img src="movie.avif" width="50%" height="300px" alt="">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="d-block w-100">
+                        <img src="movie.avif" width="50%" height="300px" alt="">
+                    </div>
+                  </div> -->
+                  <!-- <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                  </div> -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <div class="p">
+                <h4>Popular</h4>
+                <div class="p_posters">
+
+                </div>
+            </div>
+
+            <div class="td">
+                <h4>Trending</h4>
+                <div class="td_posters">
+
+                </div>
+            </div>
+
+            <div class="tr">
+                <h4>Top Rated</h4>
+                <div class="tr_posters">
+
+                </div>
+            </div>
+
+            <div class="up">
+                <h4>Upcoming</h4>
+                <div class="up_posters">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer"></div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
